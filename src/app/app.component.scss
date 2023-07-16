@@ -30,7 +30,6 @@
 
 .header {
   background-color: #eba8b1;
-
 }
 
 .container {
@@ -303,25 +302,25 @@ h1 {
   transform: scale(1.1, 1.1);
 }
 
-.good1 {
-  grid-column: 1/2;
-  grid-row: 2/3;
-}
-
-.good2 {
-  grid-column: 2/3;
-  grid-row: 2/3;
-}
-
-.good3 {
-  grid-column: 3/4;
-  grid-row: 2/3;
-}
-
-.good4 {
-  grid-column: 4/5;
-  grid-row: 2/3;
-}
+//.good1 {
+//  grid-column: 1/2;
+//  grid-row: 2/3;
+//}
+//
+//.good2 {
+//  grid-column: 2/3;
+//  grid-row: 2/3;
+//}
+//
+//.good3 {
+//  grid-column: 3/4;
+//  grid-row: 2/3;
+//}
+//
+//.good4 {
+//  grid-column: 4/5;
+//  grid-row: 2/3;
+//}
 
 .goods-image {
   position: absolute;
@@ -743,28 +742,27 @@ h1 {
   }
 
   .goods-card {
-
     width: 263px;
   }
 
-  .good1 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-
-  }
-  .good2 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-  .good3 {
-    grid-column: 3/4;
-    grid-row: 2/3;
-
-  }
-  .good4 {
-    grid-column: 1/4;
-    grid-row: 3/4;
-  }
+  //.good1 {
+  //  grid-column: 1/2;
+  //  grid-row: 2/3;
+  //
+  //}
+  //.good2 {
+  //  grid-column: 2/3;
+  //  grid-row: 2/3;
+  //}
+  //.good3 {
+  //  grid-column: 3/4;
+  //  grid-row: 2/3;
+  //
+  //}
+  //.good4 {
+  //  grid-column: 1/4;
+  //  grid-row: 3/4;
+  //}
   .order-inputs {
     margin-left: 120px;
   }
@@ -963,24 +961,24 @@ h1 {
     width: 263px;
   }
 
-  .good1 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-
-  }
-  .good2 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
-  .good3 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-
-  }
-  .good4 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-  }
+  //.good1 {
+  //  grid-column: 1/2;
+  //  grid-row: 2/3;
+  //
+  //}
+  //.good2 {
+  //  grid-column: 2/3;
+  //  grid-row: 2/3;
+  //}
+  //.good3 {
+  //  grid-column: 1/2;
+  //  grid-row: 3/4;
+  //
+  //}
+  //.good4 {
+  //  grid-column: 2/3;
+  //  grid-row: 3/4;
+  //}
 
   .order-container {
     flex-direction: row-reverse;
@@ -1217,29 +1215,29 @@ h1 {
     margin: 100px 0 120px 0;
   }
 
-  .good1 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-    margin: 0 0 140px 40px;
-  }
-
-  .good2 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-    margin: 0 0 140px 40px;
-  }
-
-  .good3 {
-    grid-column: 1/2;
-    grid-row: 4/5;
-    margin: 0 0 140px 40px;
-  }
-
-  .good4 {
-    grid-column: 1/2;
-    grid-row: 5/6;
-    margin: 0 0 100px 40px;
-  }
+  //.good1 {
+  //  grid-column: 1/2;
+  //  grid-row: 2/3;
+  //  margin: 0 0 140px 40px;
+  //}
+  //
+  //.good2 {
+  //  grid-column: 1/2;
+  //  grid-row: 3/4;
+  //  margin: 0 0 140px 40px;
+  //}
+  //
+  //.good3 {
+  //  grid-column: 1/2;
+  //  grid-row: 4/5;
+  //  margin: 0 0 140px 40px;
+  //}
+  //
+  //.good4 {
+  //  grid-column: 1/2;
+  //  grid-row: 5/6;
+  //  margin: 0 0 100px 40px;
+  //}
 
   .animation2 {
     display: none;

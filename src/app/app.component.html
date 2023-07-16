@@ -70,23 +70,23 @@
     </div>
 
 
-   <div class="main-advantages-cards">
-     <div class="main-card" *ngFor="let advantage of advantages ">
-       <div class="main-card-icon ">
-         <div class="ellips">
+    <div class="main-advantages-cards">
+      <div class="main-card" *ngFor="let advantage of advantages; let i=index;">
+        <div class="main-card-icon ">
+          <div class="ellips">
 
-         </div>
-         <div class="number">
-           {{advantage.number}}
-         </div>
-       </div>
-       <div class="main-card-text">
-         <h3> {{advantage.title}} </h3>
-         {{advantage.description}}
-       </div>
+          </div>
+          <div class="number">
+            {{i + 1}}
+          </div>
+        </div>
+        <div class="main-card-text">
+          <h3> {{advantage.title}} </h3>
+          {{advantage.description}}
+        </div>
 
-     </div>
-   </div>
+      </div>
+    </div>
 
   </div>
 </section>
@@ -95,57 +95,21 @@
     <h2 class="goods-title">
       Выберите свой макарун
     </h2>
-    <div class="goods-card good1">
+    <div class="goods-card good1" *ngFor="let good of goods; let i=index;">
       <div class="goods-image">
-        <img src="assets/images/good1.png" alt="good">
+        <img src="assets/images/{{good.image}}" alt="good">
       </div>
-      <div class="goods-header">Макарун с малиной</div>
+      <div class="goods-header">{{good.title}}</div>
       <div class="goods-about">
         <div class="goods-amount">1 шт.</div>
         <div class="goods-price">1,70 руб.</div>
       </div>
-      <button class="button goods-button">Заказать</button>
-
-    </div>
-    <div class="goods-card good2">
-      <div class="goods-image">
-        <img src="assets/images/good2.png" alt="good">
-      </div>
-      <div class="goods-header">Макарун с манго</div>
-      <div class="goods-about">
-        <div class="goods-amount">1 шт.</div>
-        <div class="goods-price">1,70 руб.</div>
-      </div>
-      <button class="button goods-button">Заказать</button>
-
-    </div>
-    <div class="goods-card good3">
-      <div class="goods-image">
-        <img src="assets/images/good3.png" alt="good">
-      </div>
-      <div class="goods-header">Макарун с ванилью</div>
-      <div class="goods-about">
-        <div class="goods-amount">1 шт.</div>
-        <div class="goods-price">1,70 руб.</div>
-      </div>
-      <button class="button goods-button">Заказать</button>
-
-    </div>
-    <div class="goods-card good4">
-      <div class="goods-image">
-        <img src="assets/images/good4.png" alt="good">
-      </div>
-      <div class="goods-header">Макарун с фисташками</div>
-      <div class="goods-about">
-        <div class="goods-amount">1 шт.</div>
-        <div class="goods-price">1,70 руб.</div>
-      </div>
-      <button class="button goods-button">Заказать</button>
+      <button class="button goods-button" (click)="scrollTo(ord)">Заказать</button>
 
     </div>
   </div>
 </section>
-<section class="order">
+<section class="order" #ord>
   <div class="container order-container">
     <div class="animation1">
       <img src="assets/images/str.png" alt="strawberry">

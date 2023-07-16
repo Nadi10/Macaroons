@@ -28,5 +28,40 @@ export class AppComponent {
       title: 'Честный продукт',
       description: 'Вкус, качество и безопасность наших пирогов подтверждена декларацией о надлежащем соответствии',
     },
+  ];
+
+  public goods = [
+    {
+      image: 'good1.png',
+      title:'Макарун с малиной',
+      amount:'1 шт.',
+      count:'1,70 руб.'
+    },
+    {
+      image: 'good2.png',
+      title:'Макарун с манго',
+      amount:'1 шт.',
+      count:'1,70 руб.'
+    },
+    {
+      image: 'good3.png',
+      title:'Макарун с ванилью',
+      amount:'1 шт.',
+      count:'1,70 руб.'
+    },
+    {
+      image: 'good4.png',
+      title:'Макарун с фисташками',
+      amount:'1 шт.',
+      count:'1,70 руб.'
+    },
   ]
+
+  public scrollTo(target:HTMLElement): void{
+    target.scrollIntoView({behavior: "smooth"});
+  }
+
+  public addToCart(product:):void {
+
+  }
 }
