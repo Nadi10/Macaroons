@@ -6,12 +6,12 @@
     <nav class="header-menu">
       <ul>
         <li>
-          <a href="#">Пироженки</a>
+          <a routerLink="/"  >Пироженки</a>
         </li>
-        <li>
+        <li (click)="scrollTo(advantagesElement)">
           <a href="#">О нас</a>
         </li>
-        <li>
+        <li (click)="scrollTo(ordElement)">
           <a href="#">Оформить заказ</a>
         </li>
       </ul>
@@ -37,7 +37,7 @@
         Побалуйте себя и своих близких самыми вкусными и ароматными домашними пироженками Macaroon!
       </div>
       <div class="main-button">
-        <button class="button main-button">
+        <button class="button main-button" (click)="scrollTo(macaroonsElement)">
           Выбрать макарун
         </button>
       </div>
@@ -52,7 +52,7 @@
   </div>
 </section>
 
-<section class="advantages">
+<section class="advantages" #advantagesElement>
   <div class="container advantages-container">
 
     <h2 class="main-advantages-text">
@@ -90,7 +90,7 @@
 
   </div>
 </section>
-<section class="goods">
+<section class="goods" #macaroonsElement>
   <div class="container goods-container">
     <h2 class="goods-title">
       Выберите свой макарун
@@ -104,12 +104,12 @@
         <div class="goods-amount">1 шт.</div>
         <div class="goods-price">1,70 руб.</div>
       </div>
-      <button class="button goods-button" (click)="scrollTo(ord)">Заказать</button>
+      <button class="button goods-button" (click)="addToOrd(good, ordElement)">Заказать</button>
 
     </div>
   </div>
 </section>
-<section class="order" #ord>
+<section class="order" #ordElement>
   <div class="container order-container">
     <div class="animation1">
       <img src="assets/images/str.png" alt="strawberry">
@@ -124,12 +124,12 @@
       </div>
       <div class="order-choice">
         <div class="order-label"> Ваш выбор</div>
-        <input type="text" class="input order-input" placeholder="Напишите, что хотите заказать...">
+        <input type="text" class="input order-input" placeholder="Напишите, что хотите заказать..." [(ngModel)]="formValues.productTitle">
       </div>
       <div class="order-data">
         <div class="order-label">Заполните данные для заказа</div>
-        <input type="text" class="input name-input" placeholder="Ваше имя">
-        <input type="text" class="input phone-input" placeholder="+375 (__) ___ - __ - __">
+        <input type="text" class="input name-input" placeholder="Ваше имя"  [(ngModel)]="formValues.name">
+        <input type="text" class="input phone-input" placeholder="+375 (__) ___ - __ - __" [(ngModel)]="formValues.phone">
       </div>
       <div class="order-button">
         <button class="button order-button">Оформить заказ</button>

@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {ProductType} from "./types/product.type";
 
 @Component({
   selector: 'app-root',
@@ -30,38 +31,45 @@ export class AppComponent {
     },
   ];
 
-  public goods = [
+  public goods: ProductType[] = [
     {
       image: 'good1.png',
-      title:'Макарун с малиной',
-      amount:'1 шт.',
-      count:'1,70 руб.'
+      title: 'Макарун с малиной',
+      amount: '1 шт.',
+      count: '1,70 руб.'
     },
     {
       image: 'good2.png',
-      title:'Макарун с манго',
-      amount:'1 шт.',
-      count:'1,70 руб.'
+      title: 'Макарун с манго',
+      amount: '1 шт.',
+      count: '1,70 руб.'
     },
     {
       image: 'good3.png',
-      title:'Макарун с ванилью',
-      amount:'1 шт.',
-      count:'1,70 руб.'
+      title: 'Макарун с ванилью',
+      amount: '1 шт.',
+      count: '1,70 руб.'
     },
     {
       image: 'good4.png',
-      title:'Макарун с фисташками',
-      amount:'1 шт.',
-      count:'1,70 руб.'
+      title: 'Макарун с фисташками',
+      amount: '1 шт.',
+      count: '1,70 руб.'
     },
-  ]
+  ];
 
-  public scrollTo(target:HTMLElement): void{
+  public formValues = {
+    productTitle: '',
+    name: '',
+    phone: '',
+  }
+
+  public scrollTo(target: HTMLElement): void {
     target.scrollIntoView({behavior: "smooth"});
   }
 
-  public addToCart(product:):void {
-
+  public addToOrd(good: ProductType, target: HTMLElement): void {
+    this.scrollTo(target);
+    this.formValues.productTitle = good.title.toUpperCase();
   }
 }
